@@ -36,7 +36,7 @@ Most of the configuration is done in the `config.json` file.
     "╚═════╝  ╚═════╝  ╚═════╝",
   ],
   "repoLink": "https://github.com/nasan016/webshell",
-  "social": {
+  "social": { 
     "email": "dug@pixar.com",
     "github": "dugfromup",
     "linkedin": "dugthedog"
