@@ -277,6 +277,15 @@ function commandHandler(input : string) {
         writeLines(["Permission not granted.", "<br>"]);
       }
       break;
+    
+    case 'iframe':
+      createAndShowModal();
+      break;
+    
+    case 'iframe2':
+      createAndShowModal2();
+      break;
+    
     default:
       if(bareMode) {
         writeLines(["type 'help'", "<br>"])
@@ -285,12 +294,6 @@ function commandHandler(input : string) {
 
       writeLines(DEFAULT);
       break;
-    
-    case 'iframe':
-      createAndShowModal();
-    
-    case 'iframe2':
-      createAndShowModal2();
 
 
   } 

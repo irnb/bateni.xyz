@@ -14,7 +14,7 @@ const createBanner = () : string[] => {
       }
     }
     
-    let eleToPush = `<pre>${bannerString}</pre>`;
+    // let eleToPush = `<pre>${bannerString}</pre>`;
     // banner.push(eleToPush);
   }); 
   // show a gif file  
