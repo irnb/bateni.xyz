@@ -34,5 +34,7 @@ jobs:
       - name: Build
         run: npm run predeploy
 
-      - name: Deploy
-        run: npm run deploy
+     - name: Deploy
+       run: |
+         echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PAGES_TOKEN }}" > ~/.npmrc
+         npm run deploy
