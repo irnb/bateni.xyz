@@ -5,7 +5,7 @@ on:
     branches:
       - main  # Set a branch name to trigger deployment
   pull_request:
-
+  
 jobs:
   deploy:
     runs-on: ubuntu-22.04
@@ -19,13 +19,16 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v3
         with:
-          hugo-version: '0.110.0'
+          node-version: '18.x'
+
+      - name: Setup 
+        run: npm install
 
       - name: Build
-        run: hugo --minify
+        run: npm run predeploy
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
