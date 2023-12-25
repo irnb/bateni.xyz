@@ -5,6 +5,7 @@ import { ABOUT } from "./commands/about"
 import { DEFAULT } from "./commands/default";
 import { PROJECTS } from "./commands/projects";
 import { createWhoami } from "./commands/whoami";
+import posts  from './commands/posts';
 
 //mutWriteLines gets deleted and reassigned
 let mutWriteLines = document.getElementById("write-lines");
@@ -278,13 +279,10 @@ function commandHandler(input : string) {
       }
       break;
     
-    case 'iframe':
-      createAndShowModal();
+    case 'posts':
+      posts();
       break;
     
-    case 'iframe2':
-      createAndShowModal2();
-      break;
     
     default:
       if(bareMode) {
@@ -372,77 +370,7 @@ function createAndShowModal() {
   });
 }
 
-function createAndShowModal2() {
-  // Create the modal and iframe elements
-  const modal = document.createElement('div');
-  const iframe = document.createElement('iframe');
 
-  const closeButton = document.createElement('button');
-
-  // Set the button's text
-  closeButton.textContent = '×';
-
-
-  // Style the button
-  closeButton.style.position = 'absolute';
-  closeButton.style.top = '10px';
-  closeButton.style.right = '10px';
-  closeButton.style.background = 'none';
-  closeButton.style.border = 'none';
-  closeButton.style.fontSize = '1.5em';
-  closeButton.style.color = '#fff';
-  closeButton.style.cursor = 'pointer'; // Change the cursor when hovering over the button
-  closeButton.style.borderRadius = '50%'; // Rounded corners
-
-  // Set the iframe's src attribute to 'https://www.google.com'
-  iframe.src = 'https://twitter.com/TheHamidBateni/status/1739160782435139973';
-
-  // Append the iframe to the modal
-  modal.appendChild(iframe);
-
- // Style the modal
-  modal.style.position = 'fixed';
-  modal.style.top = '0';
-  modal.style.right = '0';
-  modal.style.bottom = '0';
-  modal.style.left = '0';
-  modal.style.background = 'rgba(0, 0, 0, 0.8)'; // Darker background
-  modal.style.display = 'flex';
-  modal.style.width = '80%';
-  modal.style.height = '80%';
-  modal.style.margin = 'auto';
-  modal.style.justifyContent = 'center';
-  modal.style.alignItems = 'center';
-  modal.style.borderRadius = '10px'; // Rounded corners
-
-  // Style the iframe
-  iframe.style.border = '0';
-  iframe.style.width = '80%';
-  iframe.style.height = '80%';
-
-  // Append the modal to the body
-  document.body.appendChild(modal);
-  // Append the iframe to the modal
-  modal.appendChild(iframe);
-  // Append the button to the modal
-  modal.appendChild(closeButton);
-
-  
-
-  // Add an event listener to the modal to close it when clicked
-  modal.addEventListener('click', function() {
-    document.body.removeChild(modal);
-  });
-
-  // Add an event listener to the button to close the modal when clicked
-  closeButton.addEventListener('click', function(event) {
-    // Prevent the click event from bubbling up to the modal
-    event.stopPropagation();
-
-    // Remove the modal from the body
-    document.body.removeChild(modal);
-  });
-}
 
 function writeLines(message : string[]) {
   message.forEach((item, idx) => {
