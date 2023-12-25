@@ -26,8 +26,8 @@ jobs:
 
       - name: Git config
         run: |
-          git config --global user.name "${GITHUB_ACTOR}"
-          git config --global user.email "${hamidmrd79@gmail.com}"
+          git config --global user.name "Hamid Bateni"
+          git config --global user.email "hamidmrd79@gmail.com"
       - name: Setup 
         run: npm install
 
