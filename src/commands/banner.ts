@@ -15,8 +15,11 @@ const createBanner = () : string[] => {
     }
     
     let eleToPush = `<pre>${bannerString}</pre>`;
-    banner.push(eleToPush);
-  });  
+    // banner.push(eleToPush);
+  }); 
+  // show a gif file  
+  banner.push("<br>");
+  banner.push("<img src='https://upload.wikimedia.org/wikipedia/commons/6/64/Trefoil_knot_conways_game_of_life.gif' width='25%'/>");
   banner.push("<br>");
   banner.push("Welcome to WebShell v1.0.0");
   banner.push("Type <span class='command'>'help'</span> for a list of all available commands.");
