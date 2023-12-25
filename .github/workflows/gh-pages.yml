@@ -1,40 +1,27 @@
-name: GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches:
-      - main  # Set a branch name to trigger deployment
-  pull_request:
+ push:
+   branches:
+     - main
 
 jobs:
-  deploy:
-    runs-on: ubuntu-22.04
-    permissions:
-      contents: write
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+ build:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout Repo
+       uses: actions/checkout@v2
 
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18.x'
+     - name: Install Dependencies
+       run: npm install
 
-      - name: Git config
-        run: |
-          git config --global user.name "Hamid Bateni"
-          git config --global user.email "hamidmrd79@gmail.com"
-      - name: Setup 
-        run: npm install
+     - name: Build
+       run: npm run predeploy
 
-      - name: Build
-        run: npm run predeploy
-
-      - name: Deploy
-        run: |
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PAGES_TOKEN }}" > ~/.npmrc
-          npm run deploy
+     - name: Force push to destination branch
+       uses: ad-m/github-push-action@v0.5.0
+       with:
+         github_token: ${{ secrets.GITHUB_TOKEN }}
+         branch: gh-pages
+         force: true
+         directory: ./dist
