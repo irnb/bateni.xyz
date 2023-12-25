@@ -5,7 +5,7 @@ on:
     branches:
       - main  # Set a branch name to trigger deployment
   pull_request:
-  
+
 jobs:
   deploy:
     runs-on: ubuntu-22.04
@@ -31,11 +31,4 @@ jobs:
         run: npm run predeploy
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        # If you're changing the branch from main,
-        # also change the `main` in `refs/heads/main`
-        # below accordingly.
-        if: github.ref == 'refs/heads/gh-pages'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+        run: npm run deploy
