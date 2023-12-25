@@ -385,7 +385,7 @@ export default function blogs() {
 
 
       // Add the post link
-      post.links.forEach((lnk, index) => {
+      post.links.forEach((lnk, ) => {
         const link = document.createElement('a');
         link.href = lnk.lnk;
         link.textContent = lnk.title + ': ' + lnk.lnk;
