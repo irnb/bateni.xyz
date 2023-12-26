@@ -39,7 +39,9 @@
   "social": {
     "email": "hamid@europe.com",
     "github": "irnb",
-    "linkedin": "irnb"
+    "linkedin": "irnb",
+    "telegram_channel": "@hamidList"
+
   },
   "aboutGreeting": "Blockchain Engineer | Web3 Protocol Architect | Solidity | ZKP | Node.js | Rust | EIP7503 Co-author ",
   "projects": [
@@ -52,6 +54,36 @@
       "PPOS",
       "Private Proof of Solvency",
       "https://arxiv.org/abs/2310.13900"
+    ],
+    [
+      "IranDAO",
+      "Whitepaper of IranDAO: A platform for supporting `Mahsa Amini` movement ",
+      "https://github.com/irandao/whitepaper/blob/master/content/IranDAO.md"
+    ],
+    [
+      "DeFiPapers",
+      "A collection of DeFi related scientific papers",
+      "https://github.com/irnb/DeFiPapers"
+    ],
+    [
+      "DeDogmaDAO",
+      "Decentralized Dogma DAO: Trying to bring DeFi economic model to the world of NFT by creating game",
+      "https://dedogmadao.gitbook.io/intro/"
+    ],
+    [
+      "web3Wall",
+      "decentralized message board",
+      "https://github.com/irnb/web3-wall"
+    ],
+    [
+      "Locket Wallet",
+      "A non-custodial wallet that provide Account Abstraction for users",
+      ""
+    ],
+    [
+      "Dexpresso",
+      "A decentralized exchange with off-chain orderbook that abstract the complexity of the blockchain for user and trying to provide CEX like user experience",
+      ""
     ]
   ]
 }

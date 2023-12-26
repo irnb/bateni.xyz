@@ -8,10 +8,13 @@ const createAbout = () : string[] => {
   const EMAIL = "Email";
   const GITHUB = "Github";
   const LINKEDIN = "Linkedin";
+  const TELEGRAM = "Channel";
   
   const email = `<i class='fa-solid fa-envelope'></i> ${EMAIL}`;   
   const github = `<i class='fa-brands fa-github'></i> ${GITHUB}`;
   const linkedin = `<i class='fa-brands fa-linkedin'></i> ${LINKEDIN}`;
+  const telegram_channel = `<i class='fa-brands fa-telegram'></i> ${TELEGRAM}`;
+
   let string = "";
 
   about.push("<br>");
@@ -37,7 +40,18 @@ const createAbout = () : string[] => {
   string += `<a target='_blank' href='https://www.linkedin.com/in/${command.social.linkedin}'>linkedin/${command.social.linkedin}</a>`;
   about.push(string);
 
+  string = '';
+  string += SPACE.repeat(2);
+  string += telegram_channel;
+  string += SPACE.repeat(17 - TELEGRAM.length);
+  string += `<a target='_blank' href='https://t.me/hamidList'>${command.social.telegram_channel}</a>`;
+  about.push(string);
+
   about.push("<br>");
+  about.push("<br>");
+  about.push("check out my linkedin profile about section for complete about me.")
+  about.push("<br>");
+
   return about
 }
 
