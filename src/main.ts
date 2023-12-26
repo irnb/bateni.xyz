@@ -28,7 +28,7 @@ const PROMPT = document.getElementById("prompt");
 const COMMANDS = ["help", "about", "projects", "whoami", "repo", "banner", "clear"];
 const HISTORY : string[] = [];
 const SUDO_PASSWORD = "050823";
-const REPO_LINK = command.repoLink;
+// const REPO_LINK = command.repoLink;
 
 const scrollToBottom = () => {
   const MAIN = document.getElementById("main");
