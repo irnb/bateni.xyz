@@ -35,13 +35,12 @@
     "⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡞⠀⢸⢹⠀⠀⣿⡹⣿⣿⣿⣿⣿⡿⠻⡿⣿⣿⣿⣿⣿⡇⠀⠀⣰⠇⠀⠀⡟⠀⠀⠀⠸⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
     "⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⠁⠀⡇⠘⠀⣸⣿⣷⣽⣿⣿⣿⣿⣇⠀⣴⣿⣿⣿⣿⣿⡇⠀⢠⠏⠀⠀⠀⡇⠀⠀⠀⢘⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
   ],
-  "repoLink": "https://github.com/nasan016/webshell",
+  "researchBoardLink": "https://github.com/irnb/research-board",
   "social": {
     "email": "hamid@europe.com",
     "github": "irnb",
     "linkedin": "irnb",
     "telegram_channel": "@hamidList"
-
   },
   "aboutGreeting": "Blockchain Engineer | Web3 Protocol Architect | Solidity | ZKP | Node.js | Rust | EIP7503 Co-author ",
   "projects": [
@@ -78,12 +77,59 @@
     [
       "Locket Wallet",
       "A non-custodial wallet that provide Account Abstraction for users",
-      ""
+      "https://dex.nobitex.ir/trade"
     ],
     [
       "Dexpresso",
-      "A decentralized exchange with off-chain orderbook that abstract the complexity of the blockchain for user and trying to provide CEX like user experience",
-      ""
+      "A decentralized exchange with off-chain orderbook that trying to provide CEX like user experience",
+      "https://dex.nobitex.ir/trade"
+    ]
+  ],
+  "presentations": [
+    [
+      "ZKP 101 ",
+      "Practical ZKP 101: Verifiable Computing and ZKP, code a Circuit in circom (language: English)",
+      "https://www.linkedin.com/feed/update/urn:li:activity:7126140057362530304"
+    ],
+    [
+      "TornadoCash",
+      "Gave a lecture on Tornado Cash and ZKP. (language: Persian)",
+      "https://www.youtube.com/watch?v=5J4DaEXfb6I"
+    ],
+    [
+      "Bitcoin",
+      "Workshop: Gave a lecture on Bitcoin in protocol level. (language: Persian)",
+      "https://www.youtube.com/watch?v=UmCCEdzYHBE"
+    ],
+    [
+      "Ethereum",
+      "Workshop: Gave a lecture on Ethereum in protocol level. (language: Persian)",
+      "https://www.youtube.com/watch?v=s_x68YFziuo"
+    ],
+    [
+      "EIP",
+      "EIP (ETHEREUM IMPROVEMENT PROPOSALS) & UPDATING THE CHAIN (ShirYaKhat S05E01) (language: Persian)",
+      "https://shiryakhat.net/2021/07/eip-updates-on-ethereum.html"
+    ],
+    [
+      "EIP-1559",
+      "EIP-1559 LET IT BURN (ShirYaKhat S05E02) (language: Persian)",
+      "https://shiryakhat.net/2021/08/eip-1559-let-it-burn.html"
+    ],
+    [
+      "Scalability",
+      "SCALABILITY, THE BLOCKCHAIN'S BOTTLENECK (ShirYaKhat S06E01) (language: Persian)",
+      "https://shiryakhat.net/2021/10/scalability-blockchain-bottleneck.html"
+    ],
+    [
+      "Scalability",
+      "SCALABILITY, THE BLOCKCHAIN'S BOTTLENECK - PART 2 (ShirYaKhat S06E02) (language: Persian)",
+      "https://shiryakhat.net/2021/11/scalability-blockchain-bottleneck-2.html"
+    ],
+    [
+      "Lightning ",
+      "LIGHTNING, MAKE BITCOIN SCALABLE AGAIN - PART 1 (ShirYaKhat S06E03-05) (language: Persian)",
+      "https://shiryakhat.net/2021/12/Lightning-Make-Bitcoin-Scalable-1.html"
     ]
   ]
 }

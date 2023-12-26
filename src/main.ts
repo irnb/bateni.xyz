@@ -4,6 +4,7 @@ import { BANNER } from "./commands/banner";
 import { ABOUT } from "./commands/about"
 import { DEFAULT } from "./commands/default";
 import { PROJECTS } from "./commands/projects";
+import { PRESENTATIONS } from "./commands/presentation";
 import { createWhoami } from "./commands/whoami";
 import posts  from './commands/posts';
 
@@ -25,7 +26,7 @@ const INPUT_HIDDEN = document.getElementById("input-hidden");
 const PASSWORD = document.getElementById("password-input");
 const PASSWORD_INPUT = document.getElementById("password-field") as HTMLInputElement;
 const PROMPT = document.getElementById("prompt");
-const COMMANDS = ["help", "about", "projects", "whoami", "repo", "banner", "clear"];
+const COMMANDS = ["help", "about", "projects", "presentations", "whoami", "repo", "banner", "clear"];
 const HISTORY : string[] = [];
 const SUDO_PASSWORD = "050823";
 // const REPO_LINK = command.repoLink;
@@ -222,6 +223,14 @@ function commandHandler(input : string) {
         break;
       }
       writeLines(PROJECTS);
+      break;
+    
+    case 'presentations':
+      if(bareMode) {
+        writeLines(["I don't want you to break the other presentations.", "<br>"])
+        break;
+      }
+      writeLines(PRESENTATIONS);
       break;
     // case 'repo':
     //   writeLines(["Redirecting to github.com...", "<br>"]);

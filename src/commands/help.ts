@@ -2,11 +2,15 @@ const helpObj = {
   "commands": [
     [
     "'about'",
-    "Who made this website?",
+    "Social media links and a short bio.",
     ],
     [
       "'projects'",
       "Maybe there's something interesting."
+    ],
+    [
+      "'presentations'",
+      "View my Blockchain related presentations."
     ],
     [
       "'whoami'",
