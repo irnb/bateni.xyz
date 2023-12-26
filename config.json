@@ -37,21 +37,21 @@
   ],
   "repoLink": "https://github.com/nasan016/webshell",
   "social": {
-    "email": "nlm8841@nyu.edu",
-    "github": "nasan016",
-    "linkedin": "nathanielmacapinlac"
+    "email": "hamid@europe.com",
+    "github": "irnb",
+    "linkedin": "irnb"
   },
-  "aboutGreeting": "Hi I'm Nathan. I'm a student at NYU Tandon.",
+  "aboutGreeting": "Blockchain Engineer | Web3 Protocol Architect | Solidity | ZKP | Node.js | Rust | EIP7503 Co-author ",
   "projects": [
     [
-      "GofeR",
-      "Vue.js reactivity in Go.",
-      "https://github.com/nasan016/gofer"
+      "EIP7503",
+      "ZKP Wormhole: Native privacy for EVM",
+      "https://eip7503.org"
     ],
     [
-      "WebShell",
-      "Terminal styled website.",
-      "https://github.com/nasan016/webshell"
+      "PPOS",
+      "Private Proof of Solvency",
+      "https://arxiv.org/abs/2310.13900"
     ]
   ]
 }

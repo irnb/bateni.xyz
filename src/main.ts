@@ -223,12 +223,12 @@ function commandHandler(input : string) {
       }
       writeLines(PROJECTS);
       break;
-    case 'repo':
-      writeLines(["Redirecting to github.com...", "<br>"]);
-      setTimeout(() => {
-        window.open(REPO_LINK, '_blank');
-      }, 500);
-      break;
+    // case 'repo':
+    //   writeLines(["Redirecting to github.com...", "<br>"]);
+    //   setTimeout(() => {
+    //     window.open(REPO_LINK, '_blank');
+    //   }, 500);
+    //   break;
     case 'linkedin':
       //add stuff here
       break;
